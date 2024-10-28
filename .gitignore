@@ -1,0 +1,6 @@
+/env
+/data
+/workdir/*
+*.pt
+*.pkl
+*.csv
