@@ -1,0 +1,3 @@
+[ Sat Nov  9 23:07:41 2024 ] Load weights from ./checkpoints/enhance/degcn_B.pt.
+[ Sat Nov  9 23:07:43 2024 ] using warm up, epoch: 5
+[ Sat Nov  9 23:07:44 2024 ] Use Half Traning!

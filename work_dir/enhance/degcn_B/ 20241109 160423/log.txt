@@ -1,0 +1,27 @@
+[ Sat Nov  9 16:04:24 2024 ] using warm up, epoch: 5
+[ Sat Nov  9 16:04:25 2024 ] Use Half Traning!
+[ Sat Nov  9 16:04:25 2024 ] Modelargs:
+{'work_dir': './work_dir/enhance/degcn_B', 'model_saved_name': './work_dir/enhance/degcn_B/runs', 'config': './config/team/enhance/degcn_B.yaml', 'phase': 'train', 'save_score': True, 'seed': 1, 'log_interval': 100, 'save_interval': 1, 'save_epoch': 0, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'feeders.feeder_uav_human_3d.FeederUAVHuman', 'num_worker': 0, 'train_feeder_args': {'data_path': '../data/uav-human/3d/train_joint_C.npy', 'label_path': '../data/uav-human/3d/train_label_C.npy', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 64, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': True}, 'test_feeder_args': {'data_path': '../data/uav-human/3d/val_joint_C.npy', 'label_path': '../data/uav-human/3d/val_label_C.npy', 'split': 'test', 'window_size': 64, 'p_interval': [0.95], 'vel': False, 'bone': True, 'debug': False}, 'model': 'model.degcn.Model', 'model_args': {'num_class': 155, 'num_point': 17, 'num_person': 2, 'k': 8, 'eta': 4, 'num_stream': 2, 'graph': 'graph.uav.Graph', 'graph_args': {'labeling_mode': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [35, 60, 75], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 64, 'test_batch_size': 64, 'start_epoch': 0, 'num_epoch': 80, 'weight_decay': 0.0004, 'warm_up_epoch': 5, 'cosine_epoch': 60, 'half': True}
+
+[ Sat Nov  9 16:04:25 2024 ] Model profile: 1.12G FLOPs and 1.39M Parameters
+[ Sat Nov  9 16:04:25 2024 ] ****************************************************************************************************
+[ Sat Nov  9 16:04:25 2024 ] Training epoch: 1
+[ Sat Nov  9 16:05:29 2024 ] 	Mean training loss: 9.2648.  Mean training acc: 4.65%.
+[ Sat Nov  9 16:05:29 2024 ] 	Time consumption: [Data]20%, [Network]80%
+[ Sat Nov  9 16:05:29 2024 ] Eval epoch: 1
+[ Sat Nov  9 16:05:31 2024 ] 	Mean test loss of 32 batches: 9.826791852712631.
+[ Sat Nov  9 16:05:31 2024 ] 	Top1: 7.15%
+[ Sat Nov  9 16:05:31 2024 ] 	Top5: 24.10%
+[ Sat Nov  9 16:05:31 2024 ] Best_Accuracy: 7.15%, epoch: 1
+[ Sat Nov  9 16:05:31 2024 ] ****************************************************************************************************
+[ Sat Nov  9 16:05:31 2024 ] Training epoch: 2
+[ Sat Nov  9 16:06:33 2024 ] 	Mean training loss: 7.0357.  Mean training acc: 21.73%.
+[ Sat Nov  9 16:06:33 2024 ] 	Time consumption: [Data]20%, [Network]80%
+[ Sat Nov  9 16:06:33 2024 ] Best_Accuracy: 7.15%, epoch: 1
+[ Sat Nov  9 16:06:33 2024 ] ****************************************************************************************************
+[ Sat Nov  9 16:06:33 2024 ] Training epoch: 3
+[ Sat Nov  9 16:07:35 2024 ] 	Mean training loss: 6.0440.  Mean training acc: 34.03%.
+[ Sat Nov  9 16:07:35 2024 ] 	Time consumption: [Data]20%, [Network]80%
+[ Sat Nov  9 16:07:35 2024 ] Best_Accuracy: 7.15%, epoch: 1
+[ Sat Nov  9 16:07:35 2024 ] ****************************************************************************************************
+[ Sat Nov  9 16:07:35 2024 ] Training epoch: 4

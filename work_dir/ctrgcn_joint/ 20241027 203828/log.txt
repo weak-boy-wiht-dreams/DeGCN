@@ -1,2 +1,0 @@
-[ Sun Oct 27 20:38:30 2024 ] using warm up, epoch: 5
-[ Sun Oct 27 20:38:32 2024 ] Use Half Traning!

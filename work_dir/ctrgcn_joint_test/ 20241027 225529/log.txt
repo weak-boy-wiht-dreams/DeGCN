@@ -1,1 +1,0 @@
-[ Sun Oct 27 22:55:30 2024 ] Load weights from ./checkpoints/epoch_79_20224.pt.

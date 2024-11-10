@@ -305,7 +305,7 @@ class Processor():
         self.loss = LabelSmoothingCrossEntropy().cuda(output_device)
 
         if self.arg.weights:
-            self.global_step = int(arg.weights[:-3].split('_')[-1])
+            #self.global_step = int(arg.weights[:-3].split('_')[-1])
             self.print_log('Load weights from {}.'.format(self.arg.weights))
             if '.pkl' in self.arg.weights:
                 with open(self.arg.weights, 'r') as f:

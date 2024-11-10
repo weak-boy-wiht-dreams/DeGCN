@@ -186,9 +186,9 @@ def random_rot(data_numpy, theta=0.3):
     rot = torch.stack([rot, ] * T, dim=0)
     rot = _rot(rot)  # T,3,3
     data_torch = torch.matmul(rot, data_torch)
-    data_torch = data_torch.view(T, C, V, M).permute(1, 0, 2, 3).contiguous()
+    data_numpy = data_torch.view(T, C, V, M).permute(1, 0, 2, 3).contiguous().numpy()
 
-    return data_torch
+    return data_numpy
 
 def openpose_match(data_numpy):
     C, T, V, M = data_numpy.shape
